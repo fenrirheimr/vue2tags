@@ -25,6 +25,7 @@ export default {
     >
       <v-icon class="icon">mdi-circle-small</v-icon>
       <v-chip
+          link
           class="tag"
           :style="{
             'font-size': `${fontSize}px`
