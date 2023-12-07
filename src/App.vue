@@ -9,7 +9,6 @@
 <style scoped lang="scss">
 @import 'src/styles/_mixin';
 #app {
-  //@include flex(row, flex-start, flex-start);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
