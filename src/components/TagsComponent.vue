@@ -5,6 +5,7 @@ export default {
   props: {
     tags: Array,
     alignment: VueTypes.oneOf(['start', 'center', 'end']).def('start'),
+    fontSize: Number
   }
 }
 </script>
@@ -23,7 +24,12 @@ export default {
         v-for="(tag, i) in tags" :key="i"
     >
       <v-icon class="icon">mdi-circle-small</v-icon>
-      <v-chip class="tag">
+      <v-chip
+          class="tag"
+          :style="{
+            'font-size': `${fontSize}px`
+          }"
+      >
         <v-icon left v-if="tag.icon">
           {{ tag.icon }}
         </v-icon>

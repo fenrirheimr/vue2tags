@@ -57,7 +57,7 @@ export default {
       <v-row class="my-3">
         <v-col>
           <div class="title mb-3">По правому краю</div>
-          <TagsComponent :tags="tags" alignment="end" />
+          <TagsComponent :tags="tags" alignment="end" font-size="20" />
         </v-col>
       </v-row>
       <v-row class="my-3">
@@ -72,7 +72,7 @@ export default {
     <v-row class="my-3">
       <v-col>
         <div class="title mb-3">По левому краю</div>
-        <TagsComponent :tags="this.tags" alignment="start" />
+        <TagsComponent :tags="this.tags" alignment="start" font-size="10"/>
       </v-col>
       <v-divider vertical class="mx-5"></v-divider>
       <v-col>
